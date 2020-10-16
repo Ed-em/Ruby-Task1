@@ -3,7 +3,7 @@ class Player
   def hand
     # Display "Sentences that require the player to enter 0 to 2".
     puts "Please enter a number to play a hand."
-    puts "0:Paper, 1:Rock, 2:Scissors"
+    puts "0:Rock, 1:Scissors, 2:Paper"
     # Get what the player has entered in the variable "input_hand" and assign it.
       #Hint! Use the "gets method".
     input_hand = gets.to_i
@@ -23,7 +23,7 @@ class Player
           #puts "Please enter the number again."
           puts "Please enter 0, 1 or 2"
           # puts "0: Goo, 1: Choki, 2: Par"
-          puts "0:Paper, 1:Rock, 2:Scissors"
+          puts "0:Rock, 1:Scissors, 2:Paper"
           # Get what the player has entered in the variable "input_hand" and assign it.
           input_hand = gets.to_i
           # end if statement end
@@ -37,7 +37,7 @@ class Enemy
   def hand
     #Randomly output the values of goo, choki, and par
     enemy_hand = rand(0..2)
-    janken = ["Paper", "Rock", "Scissors"]
+    janken = ["Rock", "Scissors", "Paper"]
     puts "The computer played #{janken[enemy_hand]}"
     return enemy_hand
   end
